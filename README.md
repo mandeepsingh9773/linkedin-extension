@@ -32,6 +32,6 @@ This should create a production bundle for your extension, ready to be zipped an
 
 It was a intresting task to perform and I have completed it in the given time frame.
 
-## Assignment Submission Video Link 
+## Assignment Submission Video : 
 
 [![Video Thumbnail](https://img.youtube.com/vi/NAm8uJFaCA0/0.jpg)](https://www.youtube.com/watch?v=NAm8uJFaCA0&autoplay=1)
