@@ -28,10 +28,10 @@ npm run build
 
 This should create a production bundle for your extension, ready to be zipped and published to the stores.
 
-## Hey, this Mandeep here is my Submission for the task ! 
+## Hey, this is Mandeep! 
 
-It was a intresting task to perform and I have completed it in the given time frame.
+It was a intresting application to make and got to learn about new things ! 
 
-## Assignment Submission Video : 
+## Explaination Video : 
 
 [![Video Thumbnail](https://img.youtube.com/vi/NAm8uJFaCA0/0.jpg)](https://www.youtube.com/watch?v=NAm8uJFaCA0&autoplay=1)
