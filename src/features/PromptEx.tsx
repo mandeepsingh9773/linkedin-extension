@@ -47,7 +47,7 @@ export const PromptEx = () => {
   const handleIconClick = () => {
     setModalVisible(true)
   }
-  const handleCloseModal =()=>{
+  const handleCloseModal = () => {
     setModalVisible(false)
   }
 
@@ -83,12 +83,12 @@ export const PromptEx = () => {
   }
 
   function displayImageInMessageTextArea() {
-    // creating element to add the image and show it only when the input field id focused
+    // creating element to add the image and show it only when the input field is focused
     var img = document.createElement("img")
     img.addEventListener("click", handleIconClick)
     img.src = Icon
 
-    // Styles for the icon
+    // styles for the icon
     img.style.width = "25px"
     img.style.cursor = "pointer"
     img.className = "AI-Icon"
@@ -99,7 +99,7 @@ export const PromptEx = () => {
     var messageTextArea = document.querySelector(".msg-form__contenteditable")
 
     if (messageTextArea) {
-      // Aaa the image to the message textarea
+      // append the image to the message textarea
       messageTextArea.appendChild(img)
     }
   }
@@ -112,7 +112,7 @@ export const PromptEx = () => {
   })
 
   function removeImageFromMessageTextArea() {
-    // Find the image element and then remove it
+    // find the image element and then remove it
     var img = document.querySelector(".AI-Icon")
     if (img) {
       img.remove()
@@ -183,7 +183,9 @@ export const PromptEx = () => {
         </div>
       </div>
       {modalVisible ? (
-        <div onClick={handleCloseModal} className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-20 flex justify-center items-center z-10"></div>
+        <div
+          onClick={handleCloseModal}
+          className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-20 flex justify-center items-center z-10"></div>
       ) : (
         <div></div>
       )}
