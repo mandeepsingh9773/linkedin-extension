@@ -25,4 +25,4 @@ const PlasmoOverlay = () => {
   )
 }
 
-export default PlasmoOverlay
+export default PlasmoOverlay;
