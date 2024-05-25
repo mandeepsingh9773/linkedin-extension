@@ -82,7 +82,7 @@ export const PromptEx = () => {
     }
   }
 
-  function displayImageInMessageTextArea() {
+  const displayImageInMessageTextArea = () => {
     // creating element to add the image and show it only when the input field is focused
     var img = document.createElement("img")
     img.addEventListener("click", handleIconClick)
@@ -104,20 +104,20 @@ export const PromptEx = () => {
     }
   }
 
-  document.addEventListener("focusin", function (event) {
-    var focusedElement = event.target as Element
-    if (focusedElement.matches(".msg-form__contenteditable")) {
-      displayImageInMessageTextArea()
-    }
-  })
-
-  function removeImageFromMessageTextArea() {
+  const removeImageFromMessageTextArea = () => {
     // find the image element and then remove it
     var img = document.querySelector(".AI-Icon")
     if (img) {
       img.remove()
     }
   }
+
+  document.addEventListener("focusin", function (event) {
+    var focusedElement = event.target as Element
+    if (focusedElement.matches(".msg-form__contenteditable")) {
+      displayImageInMessageTextArea()
+    }
+  })
 
   document.addEventListener("focusout", function (event) {
     var focusedElement = event.relatedTarget as Element
